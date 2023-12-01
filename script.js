@@ -23,9 +23,14 @@ buttons[1].addEventListener('click', () => {
     }
 });
 
-// When button 3 is clicked, remove the last List Item from the List Container.
+// When Button 3 is clicked, remove the last List Item from the List Container.
 buttons[2].addEventListener("click", () => {
   const listItems = document.querySelectorAll("li");
   const indexToBeRemoved = listItems.length - 1;
   listItems[indexToBeRemoved].remove();
 });
+
+// Add padding and a border to main-container
+document.getElementById('main-container').style.border = 'thick solid black';
+document.getElementById("main-container").style.padding = "20px";
+

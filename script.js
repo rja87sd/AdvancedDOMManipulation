@@ -12,11 +12,11 @@ buttons[0].addEventListener("click", () => {
   const li = document.createElement("li");
   li.innerText = "New Item";
 
-  // Add a 'click' Event Listener to toggle the 'highlight' class when a List Item is clicked. (This is the closest I could come to getting this to work.)
+  // Add a 'click' Event Listener to toggle the 'highlight' class when a List Item is clicked.
   li.addEventListener("click", () => {
     li.className = "changeColor";
     li.classList.add("highlight");
-    ul.appendChild(li);
+
   });
 
   ul.appendChild(li);

@@ -23,3 +23,9 @@ buttons[1].addEventListener('click', () => {
     }
 });
 
+// When button 3 is clicked, remove the last List Item from the List Container.
+buttons[2].addEventListener("click", () => {
+  const listItems = document.querySelectorAll("li");
+  const indexToBeRemoved = listItems.length - 1;
+  listItems[indexToBeRemoved].remove();
+});
